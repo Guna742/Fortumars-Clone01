@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortumars AI Technologies & Business Solutions - Unified HRM & LMS Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Top Navigation Bar -->
@@ -88,8 +88,8 @@
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Active Projects</span>
-                        <span class="metric-value">14</span>
+                        <span class="metric-label">Active Leads</span>
+                        <span class="metric-value">84</span>
                     </div>
                 </div>
 
@@ -110,12 +110,12 @@
                 <div class="metric-card">
                     <div class="metric-icon orange">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M12.5 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM20 8v6M23 11h-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Open Positions</span>
-                        <span class="metric-value">6</span>
+                        <span class="metric-label">Monthly Revenue</span>
+                        <span class="metric-value">$124K</span>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                         <div class="activity-item">
                             <div class="activity-dot green"></div>
                             <div class="activity-content">
-                                <p class="activity-text">Course completed: Cloud Computing with AWS by Rahul Verma</p>
+                                <p class="activity-text">New lead assigned: TechCorp Solutions - AI Consulting</p>
                                 <span class="activity-time">5 hours ago</span>
                             </div>
                         </div>
@@ -151,7 +151,7 @@
                         <div class="activity-item">
                             <div class="activity-dot orange"></div>
                             <div class="activity-content">
-                                <p class="activity-text">New training program launched: Cybersecurity Essentials</p>
+                                <p class="activity-text">Deal closed: DataStream Inc - $45,000</p>
                                 <span class="activity-time">2 days ago</span>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                                 <span class="event-month">FEB</span>
                             </div>
                             <div class="event-details">
-                                <p class="event-title">HR Town Hall Meeting</p>
+                                <p class="event-title">Sales Presentation - FinTech Co</p>
                                 <span class="event-time">3:00 PM - 4:30 PM</span>
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                                 <span class="event-month">FEB</span>
                             </div>
                             <div class="event-details">
-                                <p class="event-title">DevOps Workshop</p>
+                                <p class="event-title">Client Meeting - MediCare Systems</p>
                                 <span class="event-time">2:00 PM - 5:00 PM</span>
                             </div>
                         </div>
@@ -521,41 +521,42 @@
             </div>
         </section>
 
-        <!-- LMS Tab Content -->
+        <!-- LMS Tab Content (Now Lead Management System) -->
         <section class="tab-content" id="lms">
             <div class="page-header">
-                <h1>Learning Management System</h1>
-                <p class="subtitle">Professional development and skill enhancement platform</p>
+                <h1>Lead Management System</h1>
+                <p class="subtitle">Track, manage, and convert sales opportunities</p>
             </div>
 
             <!-- LMS Quick Actions -->
             <div class="quick-actions">
-                <button class="action-btn primary" id="btnEnrollCourse">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    Enroll in Course
-                </button>
-                <button class="action-btn secondary" id="btnMyCourses">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-                        <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
-                    </svg>
-                    My Learning Path
-                </button>
-                <button class="action-btn secondary" id="btnCertificates">
+                <button class="action-btn primary" id="btnAddLead">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-                        <path d="M16 8L10 14l-4-4" stroke="currentColor" stroke-width="2"/>
+                        <line x1="12" y1="8" x2="12" y2="16" stroke="currentColor" stroke-width="2"/>
+                        <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="2"/>
                     </svg>
-                    My Certificates
+                    Add New Lead
                 </button>
-                <button class="action-btn secondary" id="btnScheduleTraining">
+                <button class="action-btn secondary" id="btnImportLeads">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Import Leads
+                </button>
+                <button class="action-btn secondary" id="btnScheduleFollowup">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                         <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
                         <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
                         <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
                     </svg>
-                    Schedule Training
+                    Schedule Follow-up
+                </button>
+                <button class="action-btn secondary" id="btnViewReports">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    View Reports
                 </button>
             </div>
 
@@ -564,274 +565,322 @@
                 <div class="metric-card">
                     <div class="metric-icon blue">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Enrolled Courses</span>
-                        <span class="metric-value">5</span>
-                        <span class="metric-change positive">3 in progress</span>
+                        <span class="metric-label">Total Leads</span>
+                        <span class="metric-value">284</span>
+                        <span class="metric-change positive">+42 this month</span>
                     </div>
                 </div>
 
                 <div class="metric-card">
                     <div class="metric-icon green">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Completed</span>
-                        <span class="metric-value">12</span>
-                        <span class="metric-change positive">This year</span>
+                        <span class="metric-label">Qualified Leads</span>
+                        <span class="metric-value">84</span>
+                        <span class="metric-change positive">29.6% conversion</span>
                     </div>
                 </div>
 
                 <div class="metric-card">
                     <div class="metric-icon purple">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Learning Hours</span>
-                        <span class="metric-value">64h</span>
-                        <span class="metric-change positive">This month</span>
+                        <span class="metric-label">Pipeline Value</span>
+                        <span class="metric-value">$2.4M</span>
+                        <span class="metric-change positive">+18% vs last month</span>
                     </div>
                 </div>
 
                 <div class="metric-card">
                     <div class="metric-icon orange">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"/>
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Certifications</span>
-                        <span class="metric-value">8</span>
-                        <span class="metric-change neutral">Earned</span>
+                        <span class="metric-label">Avg Response Time</span>
+                        <span class="metric-value">2.4h</span>
+                        <span class="metric-change positive">-0.6h improvement</span>
                     </div>
                 </div>
             </div>
 
-            <!-- My Learning Progress -->
+            <!-- Lead Pipeline -->
             <div class="card">
                 <div class="card-header">
-                    <h3>My Current Courses</h3>
+                    <h3>Sales Pipeline</h3>
                 </div>
                 <div class="card-body">
-                    <div class="my-courses-list">
-                        <div class="my-course-item">
-                            <div class="course-icon-small blue">AI</div>
-                            <div class="my-course-details">
-                                <h4>AI & Machine Learning Fundamentals</h4>
-                                <p class="course-instructor">Dr. Arjun Patel • 40 hours</p>
-                                <div class="course-meta-row">
-                                    <span class="course-deadline">Due: Feb 28, 2026</span>
-                                    <span class="course-completion">65% complete</span>
+                    <div class="pipeline-grid">
+                        <div class="pipeline-stage">
+                            <div class="stage-header new-leads">
+                                <h4>New Leads</h4>
+                                <span class="stage-count">42</span>
+                            </div>
+                            <div class="stage-body">
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>TechCorp Solutions</h5>
+                                        <span class="lead-value">$45,000</span>
+                                    </div>
+                                    <p class="lead-description">AI Consulting Services</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">John Miller</span>
+                                        <span class="lead-time">2 hours ago</span>
+                                    </div>
                                 </div>
-                                <div class="progress-container small">
-                                    <div class="progress-bar" data-progress="65"></div>
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>DataStream Inc</h5>
+                                        <span class="lead-value">$32,000</span>
+                                    </div>
+                                    <p class="lead-description">Cloud Migration Project</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">Sarah Johnson</span>
+                                        <span class="lead-time">5 hours ago</span>
+                                    </div>
+                                </div>
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>FinTech Innovations</h5>
+                                        <span class="lead-value">$28,500</span>
+                                    </div>
+                                    <p class="lead-description">ML Model Development</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">Michael Chen</span>
+                                        <span class="lead-time">1 day ago</span>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="btn-continue">Continue</button>
                         </div>
 
-                        <div class="my-course-item">
-                            <div class="course-icon-small green">AWS</div>
-                            <div class="my-course-details">
-                                <h4>Cloud Computing with AWS</h4>
-                                <p class="course-instructor">Neha Kapoor • 35 hours</p>
-                                <div class="course-meta-row">
-                                    <span class="course-deadline">Due: Mar 15, 2026</span>
-                                    <span class="course-completion">82% complete</span>
+                        <div class="pipeline-stage">
+                            <div class="stage-header qualified">
+                                <h4>Qualified</h4>
+                                <span class="stage-count">28</span>
+                            </div>
+                            <div class="stage-body">
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>MediCare Systems</h5>
+                                        <span class="lead-value">$67,000</span>
+                                    </div>
+                                    <p class="lead-description">Healthcare AI Platform</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">Dr. Emily Watson</span>
+                                        <span class="lead-time">3 days ago</span>
+                                    </div>
                                 </div>
-                                <div class="progress-container small">
-                                    <div class="progress-bar" data-progress="82"></div>
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>EduTech Pro</h5>
+                                        <span class="lead-value">$41,000</span>
+                                    </div>
+                                    <p class="lead-description">Learning Analytics System</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">Robert Taylor</span>
+                                        <span class="lead-time">4 days ago</span>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="btn-continue">Continue</button>
                         </div>
 
-                        <div class="my-course-item">
-                            <div class="course-icon-small purple">OPS</div>
-                            <div class="my-course-details">
-                                <h4>DevOps & CI/CD Pipeline</h4>
-                                <p class="course-instructor">Amit Sharma • 45 hours</p>
-                                <div class="course-meta-row">
-                                    <span class="course-deadline">Due: Apr 10, 2026</span>
-                                    <span class="course-completion">28% complete</span>
-                                </div>
-                                <div class="progress-container small">
-                                    <div class="progress-bar" data-progress="28"></div>
+                        <div class="pipeline-stage">
+                            <div class="stage-header proposal">
+                                <h4>Proposal</h4>
+                                <span class="stage-count">18</span>
+                            </div>
+                            <div class="stage-body">
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>RetailMax Corp</h5>
+                                        <span class="lead-value">$89,000</span>
+                                    </div>
+                                    <p class="lead-description">Customer Analytics Platform</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">Lisa Anderson</span>
+                                        <span class="lead-time">1 week ago</span>
+                                    </div>
                                 </div>
                             </div>
-                            <button class="btn-continue">Continue</button>
+                        </div>
+
+                        <div class="pipeline-stage">
+                            <div class="stage-header negotiation">
+                                <h4>Negotiation</h4>
+                                <span class="stage-count">12</span>
+                            </div>
+                            <div class="stage-body">
+                                <div class="lead-card">
+                                    <div class="lead-header">
+                                        <h5>AutoTech Industries</h5>
+                                        <span class="lead-value">$125,000</span>
+                                    </div>
+                                    <p class="lead-description">Computer Vision System</p>
+                                    <div class="lead-meta">
+                                        <span class="lead-contact">David Park</span>
+                                        <span class="lead-time">2 weeks ago</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Recommended & Available Courses -->
-            <div class="card">
-                <div class="card-header">
-                    <h3>Recommended Courses</h3>
-                </div>
-                <div class="card-body">
-                    <div class="course-grid">
-                        <div class="course-card">
-                            <div class="course-icon blue">AI</div>
-                            <h4>Advanced Neural Networks</h4>
-                            <p class="course-meta">Trainer: Dr. Arjun Patel • 50 hours</p>
-                            <div class="course-tags">
-                                <span class="tag">Advanced</span>
-                                <span class="tag">AI/ML</span>
-                            </div>
-                            <div class="course-footer">
-                                <span class="course-participants">15 enrolled</span>
-                                <button class="btn-enroll">Enroll Now</button>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-icon green">K8S</div>
-                            <h4>Kubernetes Administration</h4>
-                            <p class="course-meta">Trainer: Neha Kapoor • 42 hours</p>
-                            <div class="course-tags">
-                                <span class="tag">Intermediate</span>
-                                <span class="tag">DevOps</span>
-                            </div>
-                            <div class="course-footer">
-                                <span class="course-participants">22 enrolled</span>
-                                <button class="btn-enroll">Enroll Now</button>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-icon orange">SEC</div>
-                            <h4>Advanced Cloud Security</h4>
-                            <p class="course-meta">Trainer: Pooja Singh • 38 hours</p>
-                            <div class="course-tags">
-                                <span class="tag">Advanced</span>
-                                <span class="tag">Security</span>
-                            </div>
-                            <div class="course-footer">
-                                <span class="course-participants">18 enrolled</span>
-                                <button class="btn-enroll">Enroll Now</button>
-                            </div>
-                        </div>
-
-                        <div class="course-card">
-                            <div class="course-icon purple">DATA</div>
-                            <h4>Big Data Analytics</h4>
-                            <p class="course-meta">Trainer: Ravi Kumar • 48 hours</p>
-                            <div class="course-tags">
-                                <span class="tag">Intermediate</span>
-                                <span class="tag">Data Science</span>
-                            </div>
-                            <div class="course-footer">
-                                <span class="course-participants">20 enrolled</span>
-                                <button class="btn-enroll">Enroll Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Upcoming Training Sessions -->
+            <!-- Hot Leads & Recent Activity -->
             <div class="content-row">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Upcoming Live Sessions</h3>
+                        <h3>Hot Leads - High Priority</h3>
+                        <span class="badge-count">8</span>
+                    </div>
+                    <div class="card-body">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Contact</th>
+                                    <th>Service</th>
+                                    <th>Value</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="employee-cell">
+                                            <div class="employee-avatar">TC</div>
+                                            <span>TechCorp Solutions</span>
+                                        </div>
+                                    </td>
+                                    <td>John Miller</td>
+                                    <td>AI Consulting</td>
+                                    <td>$45,000</td>
+                                    <td><span class="status-badge active">Hot</span></td>
+                                    <td>
+                                        <button class="btn-continue">Contact</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-cell">
+                                            <div class="employee-avatar">MS</div>
+                                            <span>MediCare Systems</span>
+                                        </div>
+                                    </td>
+                                    <td>Dr. Emily Watson</td>
+                                    <td>Healthcare AI</td>
+                                    <td>$67,000</td>
+                                    <td><span class="status-badge active">Hot</span></td>
+                                    <td>
+                                        <button class="btn-continue">Contact</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="employee-cell">
+                                            <div class="employee-avatar">AT</div>
+                                            <span>AutoTech Industries</span>
+                                        </div>
+                                    </td>
+                                    <td>David Park</td>
+                                    <td>Computer Vision</td>
+                                    <td>$125,000</td>
+                                    <td><span class="status-badge active">Hot</span></td>
+                                    <td>
+                                        <button class="btn-continue">Contact</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Lead Activity Timeline</h3>
                     </div>
                     <div class="card-body">
                         <div class="session-list">
                             <div class="session-item">
                                 <div class="session-time-badge">
-                                    <span class="session-day">FEB 08</span>
-                                    <span class="session-hour">10:00 AM</span>
+                                    <span class="session-day">TODAY</span>
+                                    <span class="session-hour">10:30 AM</span>
                                 </div>
                                 <div class="session-details">
-                                    <h4>Introduction to Prompt Engineering</h4>
-                                    <p>Dr. Arjun Patel • 2 hours</p>
-                                    <span class="session-platform">Virtual - Zoom</span>
+                                    <h4>Meeting Scheduled</h4>
+                                    <p>TechCorp Solutions - Initial Discovery Call</p>
+                                    <span class="session-platform">Video Conference</span>
                                 </div>
-                                <button class="btn-join">Join Session</button>
                             </div>
 
                             <div class="session-item">
                                 <div class="session-time-badge">
-                                    <span class="session-day">FEB 10</span>
+                                    <span class="session-day">FEB 08</span>
                                     <span class="session-hour">2:00 PM</span>
                                 </div>
                                 <div class="session-details">
-                                    <h4>Microservices Architecture</h4>
-                                    <p>Karan Mehta • 3 hours</p>
-                                    <span class="session-platform">Conference Room A</span>
+                                    <h4>Proposal Sent</h4>
+                                    <p>RetailMax Corp - Customer Analytics Platform</p>
+                                    <span class="session-platform">Email</span>
                                 </div>
-                                <button class="btn-join">Join Session</button>
                             </div>
 
                             <div class="session-item">
                                 <div class="session-time-badge">
-                                    <span class="session-day">FEB 12</span>
+                                    <span class="session-day">FEB 06</span>
                                     <span class="session-hour">11:00 AM</span>
                                 </div>
                                 <div class="session-details">
-                                    <h4>Docker & Container Orchestration</h4>
-                                    <p>Neha Kapoor • 2.5 hours</p>
-                                    <span class="session-platform">Virtual - Teams</span>
+                                    <h4>Contract Signed</h4>
+                                    <p>DataStream Inc - Cloud Migration Project</p>
+                                    <span class="session-platform">DocuSign</span>
                                 </div>
-                                <button class="btn-join">Join Session</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <h3>Recent Achievements</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="achievement-list">
-                            <div class="achievement-item">
-                                <div class="achievement-badge completed">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <div class="achievement-info">
-                                    <h4>Cloud Certified</h4>
-                                    <p>Completed AWS Solutions Architect course</p>
-                                    <span class="achievement-date">Jan 28, 2026</span>
-                                </div>
-                            </div>
-
-                            <div class="achievement-item">
-                                <div class="achievement-badge completed">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <div class="achievement-info">
-                                    <h4>Learning Streak</h4>
-                                    <p>30 consecutive days of learning</p>
-                                    <span class="achievement-date">Feb 04, 2026</span>
-                                </div>
-                            </div>
-
-                            <div class="achievement-item">
-                                <div class="achievement-badge completed">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" fill="currentColor"/>
-                                    </svg>
-                                </div>
-                                <div class="achievement-info">
-                                    <h4>Top Performer</h4>
-                                    <p>Highest score in Cybersecurity course</p>
-                                    <span class="achievement-date">Jan 15, 2026</span>
-                                </div>
-                            </div>
+            <!-- Conversion Funnel -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>Lead Conversion Funnel</h3>
+                </div>
+                <div class="card-body">
+                    <div class="funnel-chart">
+                        <div class="funnel-stage" style="width: 100%">
+                            <span class="funnel-label">Total Leads</span>
+                            <span class="funnel-count">284</span>
+                        </div>
+                        <div class="funnel-stage" style="width: 80%">
+                            <span class="funnel-label">Contacted</span>
+                            <span class="funnel-count">227</span>
+                        </div>
+                        <div class="funnel-stage" style="width: 60%">
+                            <span class="funnel-label">Qualified</span>
+                            <span class="funnel-count">170</span>
+                        </div>
+                        <div class="funnel-stage" style="width: 40%">
+                            <span class="funnel-label">Proposal Sent</span>
+                            <span class="funnel-count">114</span>
+                        </div>
+                        <div class="funnel-stage" style="width: 20%">
+                            <span class="funnel-label">Closed Won</span>
+                            <span class="funnel-count">57</span>
                         </div>
                     </div>
                 </div>
@@ -1147,8 +1196,8 @@
                         </svg>
                     </div>
                     <div class="metric-info">
-                        <span class="metric-label">Training ROI</span>
-                        <span class="metric-value">243%</span>
+                        <span class="metric-label">Sales Conversion</span>
+                        <span class="metric-value">20.1%</span>
                         <span class="metric-change positive">Above target</span>
                     </div>
                 </div>
@@ -1298,6 +1347,12 @@
                         <div class="integration-item">
                             <div class="integration-info">
                                 <span class="integration-name">Google Workspace</span>
+                                <span class="integration-status connected">Connected</span>
+                            </div>
+                        </div>
+                        <div class="integration-item">
+                            <div class="integration-info">
+                                <span class="integration-name">Salesforce CRM</span>
                                 <span class="integration-status connected">Connected</span>
                             </div>
                         </div>
